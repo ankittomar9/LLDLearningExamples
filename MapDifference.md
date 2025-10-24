@@ -1,16 +1,26 @@
-# Map Implementations in Java
+# Understanding Map Implementations in Java
 
-## 1. Differences between HashMap, LinkedHashMap and TreeMap
+## Differences between HashMap, LinkedHashMap and TreeMap
 
-| Feature | HashMap | LinkedHashMap | TreeMap |
-|---------|---------|---------------|---------|
-| Order | No guaranteed order. Order changes over time. | Maintains insertion order. | Natural or custom sorted order of keys. |
-| Null Keys/Values | Allows one null key and multiple null values. | Allows one null key and multiple null values. | Does NOT allow null keys. Allows multiple null values. |
-| Underlying Data Structure | Array of buckets (nodes). Uses hashing. | Array of buckets with doubly-linked list. | Red-Black Tree (self-balancing BST). |
-| Performance | O(1) for get/put (average case). Fastest for basic operations. | O(1) for get/put. Better iteration performance. | O(log n) for get/put. Slower than HashMap. |
-| Use Case | Fast lookups where order doesn't matter. | When insertion order matters (e.g., LRU cache). | When keys need to be sorted. |
+### Key Characteristics Comparison
 
-## Example Code
+| Characteristic | HashMap | LinkedHashMap | TreeMap |
+|---------------|---------|---------------|---------|
+| Ordering | No guaranteed order | Maintains insertion order | Sorted by natural order of keys |
+| Performance (get/put) | O(1) average | O(1) average | O(log n) |
+| Null values | One null key, multiple null values | One null key, multiple null values | No null keys allowed |
+| Memory overhead | Low | Medium (extra linked list) | High (tree structure) |
+| Implementation | Hash table | Hash table + Doubly-linked list | Red-black tree |
+
+### Use Cases
+
+| Map Type | Best Used When |
+|----------|---------------|
+| HashMap | • Need fastest possible lookups<br>• Don't care about order<br>• Memory constraints are important |
+| LinkedHashMap | • Need to maintain insertion order<br>• Implementing LRU caches<br>• Predictable iteration needed |
+| TreeMap | • Keys must be sorted<br>• Need to find closest matches<br>• Range queries are required |
+
+### Code Example
 
 ```java
 import java.util.*;
@@ -43,5 +53,15 @@ public class MapDifferences {
     }
 }
 ```
+
+### Performance Characteristics
+
+| Operation | HashMap | LinkedHashMap | TreeMap |
+|-----------|---------|---------------|---------|
+| get() | O(1) | O(1) | O(log n) |
+| put() | O(1) | O(1) | O(log n) |
+| remove() | O(1) | O(1) | O(log n) |
+| contains() | O(1) | O(1) | O(log n) |
+| iterate | O(n) | O(n) | O(n) |
 
 ## 2. How does ConcurrentHashMap achieve thread safety?
