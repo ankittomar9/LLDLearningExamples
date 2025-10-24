@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "PrintPerfectSquares",
+            "request": "launch",
+            "mainClass": "PrintPerfectSquares",
+            "projectName": "CPJavaLearning_350884eb"
+        },
+        {
+            "type": "jdk",
+            "request": "launch",
+            "name": "Launch Java App"
+        },
+        {
+            "name": "Attach by com.sun.jdi.SharedMemoryListen",
+            "type": "jdk",
+            "request": "attach",
+            "listen": "${command:jdk.java.attachDebugger.connector.com.sun.jdi.SharedMemoryListen.listen}"
+        }
+    ]
+}

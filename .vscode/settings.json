@@ -1,0 +1,18 @@
+{
+    "editor.suggest.showWords": true,
+    "editor.suggest.showClasses": true,
+    "editor.suggest.showFunctions": true,
+    "editor.suggest.showKeywords": true,
+    "editor.suggest.showSnippets": true,
+    "editor.suggest.showMethods": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": "disabled",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.editor.enableAutoCompletionsForAllLanguages": true,
+    "github.copilot.inlineSuggest.enable": true
+}

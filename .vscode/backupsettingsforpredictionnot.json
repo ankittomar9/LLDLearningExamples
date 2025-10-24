@@ -1,0 +1,19 @@
+{
+    "editor.suggest.showWords": false,
+    "editor.suggest.showClasses": false,
+    "editor.suggest.showFunctions": false,
+    "editor.suggest.showKeywords": false,
+    "editor.suggest.showSnippets": false,
+    "editor.suggest.showMethods": false,
+    "java.jdt.ls.java.home": null,
+    "git.ignoreLimitWarning": true,
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [],
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    }
+}

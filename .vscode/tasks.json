@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile and run",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "javac -d ./out ${relativeFile} && cd ./out && java ${fileBasenameNoExtension} < ../input.txt > ../output.txt"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "java",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            }
+        }
+    ]
+}
