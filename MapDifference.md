@@ -34,3 +34,5 @@ public class MapDifferences {
         System.out.println("TreeMap: " + treeMap); // Output: {Apple=1, Banana=2, Cherry=3}
     }
 }
+
+2. How does ConcurrentHashMap achieve thread safety?
