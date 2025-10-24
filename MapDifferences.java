@@ -24,3 +24,9 @@ public class MapDifferences {
         System.out.println("TreeMap: " + treeMap); // Output: {Apple=1, Banana=2, Cherry=3}
     }
 }
+
+
+/*
+ * 
+ * Learning Examples for Different Map Implementations in Java
+ */
