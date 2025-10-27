@@ -1,2 +1,14 @@
 Object Oriented Programming (OOP) 
 is a programming paradigm that uses "objects" to represent data and methods to manipulate that data. It is based on several key concepts:
+
+1. **Encapsulation**: 
+   - Bundling data (attributes) and methods (functions) that operate on the data into a single unit called an object.
+   - Restricting direct access to some of an object's components, which is a means of preventing unintended interference and misuse of the methods and data.
+
+2. **Abstraction**:
+    - Hiding the complex implementation details and showing only the essential features of the object.
+    - Simplifying the interaction with objects by providing a clear interface.
+
+3. **Inheritance**:
+    - A mechanism where a new class (subclass or derived class) can inherit properties and behaviors (methods) from an existing class (superclass or base class).
+    - Promotes code reusability and establishes a hierarchical relationship between classes.    
