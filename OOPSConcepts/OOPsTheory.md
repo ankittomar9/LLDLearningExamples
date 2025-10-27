@@ -16,3 +16,10 @@ is a programming paradigm that uses "objects" to represent data and methods to m
 4. **Polymorphism**:
     - The ability of different classes to be treated as instances of the same class through a common interface.
     - It allows methods to do different things based on the object it is acting upon, even though they share the same name.    
+
+Here are two types of polymorphism:
+   - **Compile-time Polymorphism (Static Binding)**: Achieved through method overloading or operator overloading. The method to be invoked is determined at compile time.
+   - **Run-time Polymorphism (Dynamic Binding)**: Achieved through method overriding. The method to be invoked is determined at runtime based on the object type.
+
+   But we are focused this in java ecosystem so we will see only run-time polymorphism in java.
+   
