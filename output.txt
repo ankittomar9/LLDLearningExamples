@@ -1,3 +1,0 @@
-HashMap: {Apple=1, Cherry=3, Banana=2}
-LinkedHashMap: {Apple=1, Banana=2, Cherry=3}
-TreeMap: {Apple=1, Banana=2, Cherry=3}
