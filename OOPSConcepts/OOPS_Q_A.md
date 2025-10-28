@@ -20,4 +20,4 @@ Deep Copy vs Shallow Copy in OOPs
 }
 ```     
 **Deep Copy**:
-- A deep copy of an object is a new object that is a copy of the original object
+- A deep copy of an object is a new object that is a copy of the original object   and all of the objects it references. This means that all nested objects are also copied recursively, resulting in a completely independent object.
