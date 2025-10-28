@@ -24,3 +24,20 @@ Deep Copy vs Shallow Copy in OOPs
 - Changes made to the nested objects in either the original or the copied object will not affect the other, since they are completely separate.
 - In Java, a deep copy can be implemented by overriding the `clone()` method and manually cloning the nested objects.
 ```java
+class Person implements Cloneable {
+    String name;
+    Address address; // Address is another class
+
+    public Person(String name, Address address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        Person clonedPerson = (Person) super.clone();
+        clonedPerson.address = (Address) address.clone(); // Deep copy of Address
+        return clonedPerson;
+    }
+}
+``` 
