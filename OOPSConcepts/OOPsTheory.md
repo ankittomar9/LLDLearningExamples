@@ -23,3 +23,6 @@ Here are two types of polymorphism:
 
    But we are focused this in java ecosystem so we will see only run-time polymorphism in java.
    
+
+   Why we use OOPs?
+    - **Modularity**: Code is organized into objects, making it easier to manage and understand.
