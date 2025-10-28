@@ -26,3 +26,7 @@ Here are two types of polymorphism:
 
    Why we use OOPs?
     - **Modularity**: Code is organized into objects, making it easier to manage and understand.
+    - **Reusability**: Classes can be reused across different programs, reducing redundancy.
+    - **Maintainability**: Easier to update and maintain code due to encapsulation and modularity.
+    - **Flexibility**: Polymorphism allows for flexible and dynamic code that can adapt to changing requirements.
+    - **Real-world Modeling**: OOP allows for better modeling of real-world entities and relationships, making it easier to conceptualize and design software systems.
