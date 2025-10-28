@@ -41,3 +41,4 @@ class Person implements Cloneable {
     }
 }
 ``` 
+In summary, the key difference between shallow copy and deep copy lies in how they handle nested objects. Shallow copy copies only the references to nested objects, while deep copy creates entirely new instances of nested objects, resulting in independent copies.
