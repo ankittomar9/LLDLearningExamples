@@ -1,16 +1,16 @@
 {
-    "editor.suggest.showWords": true,
-    "editor.suggest.showClasses": true,
-    "editor.suggest.showFunctions": true,
-    "editor.suggest.showKeywords": true,
-    "editor.suggest.showSnippets": true,
+    "editor.suggest.showWords": false,
+    "editor.suggest.showClasses": false,
+    "editor.suggest.showFunctions": false,
+    "editor.suggest.showKeywords": false,
+    "editor.suggest.showSnippets": false,
     "editor.suggest.showMethods": true,
     "editor.quickSuggestions": {
-        "other": true,
-        "comments": true,
-        "strings": true
+        "other": false,
+        "comments": false,
+        "strings": false
     },
-    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.enabled": false,
     "github.copilot.enable": "disabled",
     "github.copilot.editor.enableAutoCompletions": true,
     "github.copilot.editor.enableAutoCompletionsForAllLanguages": true,
