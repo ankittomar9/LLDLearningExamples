@@ -1,2 +1,2 @@
-Name: Alice, Age: 20, ID: 101
-Name: Bob, Age: 22, ID: 102
+Original List: [Hello, world, java, stream, api]
+Processed List: [HELLO, WORLD, JAVA, API]

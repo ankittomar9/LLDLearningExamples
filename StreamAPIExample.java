@@ -1,9 +1,19 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class StreamAPIExample {
     public static void main(String args[]){
 
+        List<String> words=Arrays.asList("Hello","world","java","stream","api");
         
+            List<String> processedWords=words.stream()
+            .filter(word->!word.equals("stream"))
+            .map(String::toUpperCase)
+            .collect(Collectors.toList());
             
-
+        System.out.println("Original List: " + words);
+        System.out.println("Processed List: " + processedWords);
     }
     
 }
