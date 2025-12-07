@@ -1,7 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-
 public class StreamCodingQuestions {
     public static void main(String args[]){
 
@@ -14,7 +13,6 @@ public class StreamCodingQuestions {
 
     //2.Sum of all the elements using Stream
     List<Integer> list1=Arrays.asList(10,20,5,30,15);
-
          double sum=list1.stream()
          .mapToDouble(Integer::doubleValue).sum();
           System.out.println("Sum of numbers : "+sum);
@@ -32,14 +30,12 @@ public class StreamCodingQuestions {
        .sorted().collect(Collectors.toList());
          System.out.println("Sorted numbers : "+sortedList);
     
-
     //5.Find the Distinct in List oF Integers
     List<Integer> list4=Arrays.asList(10,15,30,20,10,6,30,10,15,6);
     List<Integer> distinctList=list4.stream()
     .distinct().collect(Collectors.toList());
        System.out.println("Distinct numbers : "+distinctList);
     
-
     //6  How Do you Convert a List of Strings to UpperCase using streams //explain
         List<String> stringList=Arrays.asList("Hello","World","Java");
         List<String> uppercaseString=stringList.stream()
@@ -47,13 +43,11 @@ public class StreamCodingQuestions {
         .collect(Collectors.toList());
           System.out.println("Answer : "+uppercaseString);
 
-
      //7.How do you limit the numbers in a stream
     List<Integer> list7 =Arrays.asList(10,20,5,30,15,10,20,5,30,15);
     List<Integer>limtedList=list7.stream()
                                     .limit(3)
                                     .collect(Collectors.toList());
-
          System.out.println("Limited List : " + limtedList);
 
     //8. Skip Elements in a Stream
@@ -78,10 +72,14 @@ public class StreamCodingQuestions {
         .collect(Collectors.toList());
               System.out.println("GreaterCheckList than x : " + GreaterCheckList);
 
-
-
-
+    //11.Check if any Element is negative in a List
+        List<Integer> list11=Arrays.asList(1,4,5,1,6,7,8,9,5,4,6,3);
+        boolean negativeCheck=list11.stream()
+        .noneMatch(n->n<0);
+         System.out.println("negativeCheck : " +negativeCheck ); 
         }
 
+
+      //  
     
 }

@@ -8,3 +8,4 @@ Limited List : [10, 20, 5]
 Skipped List : [1, 2, 3, 4, 5, 6]
 Even Check : false
 GreaterCheckList than x : [50, 30, 101, 30, 105]
+negativeCheck : false
