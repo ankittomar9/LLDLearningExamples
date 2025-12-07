@@ -9,11 +9,16 @@ public class StreamEvenOddExample {
         List<Integer>EvenNumbers=numbers.stream()
         .filter(n->n%2==0)
         .collect(Collectors.toList());
+
+        List<Integer>OddNumbers=numbers.stream()
+        .filter(n->n%2!=0)
+        .collect(Collectors.toList());
         
 
         System.out.println("Original numbers: "+numbers);
-          System.out.println("EvenODD numbers: "+EvenNumbers);
-          
+          System.out.println("Even numbers: "+EvenNumbers);
+              System.out.println("ODD numbers: "+OddNumbers);
+
 
     }
     
