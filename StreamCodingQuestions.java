@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 public class StreamCodingQuestions {
@@ -95,11 +96,15 @@ public class StreamCodingQuestions {
          System.out.println("concatenated List : " +concatenated ); 
 
 
-    //14     Group a list of string ny their length using Streams
-    
+    //14 Group a list of string ny their length using Streams
 
+            List<String> strings=Arrays.asList("apple","apple",
+            "kiwi","apple","apple","kiwi","banana","kiwi");
 
-
+            Map<Integer,List<String>> groupMap=strings.stream()
+                    .collect(Collectors.groupingBy(String::length));
+                
+              System.out.println("grouped by length : " +groupMap ); 
 
 
 
