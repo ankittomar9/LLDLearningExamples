@@ -19,14 +19,51 @@ public class StreamCodingQuestions {
          .mapToDouble(Integer::doubleValue).sum();
           System.out.println("Sum of numbers : "+sum);
 
-         //3.Filter Even Numbers using Stream
+    //3.Filter Even Numbers using Stream
         List<Integer> list2=Arrays.asList(1,2,3,4,5,6,7,8,9);
         List<Integer> EvenNumber=list2.stream()
         .filter(n->n%2==0)
         .collect(Collectors.toList());
-
          System.out.println("Even numbers : "+EvenNumber);
+    
+     //4. Sort the List of Integers
+     List<Integer> list3=Arrays.asList(10,20,5,30,15);
+      List<Integer> sortedList=list3.stream()
+       .sorted().collect(Collectors.toList());
+         System.out.println("Sorted numbers : "+sortedList);
+    
 
-    }
+    //5.Find the Distinct in List oF Integers
+    List<Integer> list4=Arrays.asList(10,15,30,20,10,6,30,10,15,6);
+    List<Integer> distinctList=list4.stream()
+    .distinct().collect(Collectors.toList());
+       System.out.println("Distinct numbers : "+distinctList);
+    
+
+    //6  How Do you Convert a List of Strings to UpperCase using streams //explain
+        List<String> stringList=Arrays.asList("Hello","World","Java");
+        List<String> uppercaseString=stringList.stream()
+        .map(String :: toUpperCase )
+        .collect(Collectors.toList());
+          System.out.println("Answer : "+uppercaseString);
+
+
+            //7.How do you limit the numbers in a stream
+    List<Integer> list7 =Arrays.asList(10,20,5,30,15,10,20,5,30,15);
+    List<Integer>limtedList=list7.stream()
+                                    .limit(3)
+                                    .collect(Collectors.toList());
+
+         System.out.println("Limited List : " + limtedList);
+
+    
+    
+    
+    
+    
+    
+    
+        }
+
     
 }

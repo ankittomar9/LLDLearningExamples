@@ -1,3 +1,7 @@
 Max Number is 72
 Sum of numbers : 80.0
 Even numbers : [2, 4, 6, 8]
+Sorted numbers : [5, 10, 15, 20, 30]
+Distinct numbers : [10, 15, 30, 20, 6]
+Answer : [HELLO, WORLD, JAVA]
+Limited List : [10, 20, 5]
