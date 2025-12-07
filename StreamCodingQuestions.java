@@ -48,7 +48,7 @@ public class StreamCodingQuestions {
           System.out.println("Answer : "+uppercaseString);
 
 
-            //7.How do you limit the numbers in a stream
+     //7.How do you limit the numbers in a stream
     List<Integer> list7 =Arrays.asList(10,20,5,30,15,10,20,5,30,15);
     List<Integer>limtedList=list7.stream()
                                     .limit(3)
@@ -56,13 +56,31 @@ public class StreamCodingQuestions {
 
          System.out.println("Limited List : " + limtedList);
 
+    //8. Skip Elements in a Stream
+        List<Integer> list8=Arrays.asList(10,20,5,1,2,3,4,5,6);
+        List<Integer> SkippedList=list8.stream()
+        .skip(3)
+        .collect(Collectors.toList());
+        System.out.println("Skipped List : " + SkippedList);
     
-    
-    
-    
-    
-    
-    
+    //9 How check if all elements are even in a List
+    List<Integer> list9=Arrays.asList(2,4,6,8,10,12,14,16,1);
+    boolean EvenCheck=list9.stream()
+                          .allMatch(n->n%2==0);
+          //  .collect(Collectors.toList());
+           System.out.println("Even Check : " + EvenCheck);
+
+    //10  Check if all elements are greater than x;
+            int x=25;
+        List<Integer> list10=Arrays.asList(10,20,50,30,15,101,20,5,30,105);
+        List<Integer> GreaterCheckList=list10.stream()
+        .filter(n->n>x)
+        .collect(Collectors.toList());
+              System.out.println("GreaterCheckList than x : " + GreaterCheckList);
+
+
+
+
         }
 
     
