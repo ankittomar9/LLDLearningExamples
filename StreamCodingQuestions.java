@@ -77,9 +77,58 @@ public class StreamCodingQuestions {
         boolean negativeCheck=list11.stream()
         .noneMatch(n->n<0);
          System.out.println("negativeCheck : " +negativeCheck ); 
+       
+
+      //  Count the number of Elements in a Stream
+      List<Integer> list12=Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14);
+      long count=list12.stream()
+                 .count();
+        
+        System.out.println("Elements in List : " +count ); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
-
-      //  
-    
 }
