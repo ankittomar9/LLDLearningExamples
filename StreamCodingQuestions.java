@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 public class StreamCodingQuestions {
     public static void main(String args[]){
 
@@ -79,17 +80,23 @@ public class StreamCodingQuestions {
          System.out.println("negativeCheck : " +negativeCheck ); 
        
 
-      //  Count the number of Elements in a Stream
-      List<Integer> list12=Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14);
+      //12  Count the number of Elements in a Stream
+      List<Integer> list12=Arrays.asList(1,2,3,4,5,6,7,8,9,10);
       long count=list12.stream()
-                 .count();
-        
+                 .count();  
         System.out.println("Elements in List : " +count ); 
 
 
+    //13. Concatenate two Java Streams
+        Stream<Integer> s1=Stream.of(1,2,3,4,5);
+        Stream<Integer>s2=Stream.of(6,7,8,9,10);
+        List<Integer> concatenated=Stream.concat(s1, s2)
+        .collect(Collectors.toList());
+         System.out.println("concatenated List : " +concatenated ); 
 
 
-
+    //14     Group a list of string ny their length using Streams
+    
 
 
 
