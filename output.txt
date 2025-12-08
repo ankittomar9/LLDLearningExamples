@@ -1,3 +1,0 @@
-Employees Older than 27:
-[Employee{name='Ankur', age=29, salary=54000.0, Department='IT'},
-Employee{name='Neha', age=36, salary=60000.0, Department='HR'}]

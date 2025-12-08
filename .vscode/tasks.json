@@ -7,7 +7,7 @@
             "command": "cmd",
             "args": [
                 "/c",
-                "javac -d ./out ${relativeFile} && cd ./out && java ${fileBasenameNoExtension} < ../input.txt > ../output.txt"
+                "javac -d ./out ${relativeFile} && cd ./out && java ${relativeFileDirname}/${fileBasenameNoExtension} < ../input.txt > ../output.txt"
             ],
             "presentation": {
                 "reveal": "always"
