@@ -1,2 +1,4 @@
-Hashmap before removed Using Key{1=10, 2=20, 3=30, 4=40, 5=50}
-Hashmap value removed Using Key{1=10, 2=20, 3=30, 5=50}
+HashMap before
+ removed Using Key{1=10, 2=20, 3=30, 4=40, 5=50}
+HashMap after 
+ removed Using Key{1=10, 2=20, 3=30, 5=50}

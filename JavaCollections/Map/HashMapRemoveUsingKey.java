@@ -12,9 +12,9 @@ public class HashMapRemoveUsingKey {
         map.put(4,40);
         map.put(5,50);
 
-        System.out.println("Hashmap before removed Using Key" +map);
+        System.out.println("HashMap before\n removed Using Key" +map);
         map.remove(4);
-        System.out.println("Hashmap value removed Using Key" +map);
+        System.out.println("HashMap after \n removed Using Key" +map);
 
     }
     
