@@ -1,8 +1,10 @@
+package LLDLearningExamples.JavaCollections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 public class MapDifferences {
+    
     public static void main(String[] args) {
         // 1. HashMap: No guaranteed order
         Map<String, Integer> hashMap = new HashMap<>();
