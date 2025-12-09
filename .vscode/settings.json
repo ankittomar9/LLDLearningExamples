@@ -1,4 +1,5 @@
 {
+    "java.project.sourcePaths": ["."],
     "editor.suggest.showWords": false,
     "editor.suggest.showClasses": false,
     "editor.suggest.showFunctions": false,
@@ -15,4 +16,5 @@
     "github.copilot.editor.enableAutoCompletions": true,
     "github.copilot.editor.enableAutoCompletionsForAllLanguages": true,
     "github.copilot.inlineSuggest.enable": true
+    
 }
