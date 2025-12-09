@@ -15,6 +15,7 @@ public class HashMapRemoveUsingKey {
         System.out.println("HashMap before\n removed Using Key" +map);
         map.remove(4);
         System.out.println("HashMap after \n removed Using Key" +map);
+        
 
     }
     
