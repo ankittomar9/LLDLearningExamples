@@ -1,3 +1,1 @@
-EvenList : [2, 4, 6, 8]
-EvenList : [1, 3, 5, 7, 9]
-
+ max number in a given List : 80
