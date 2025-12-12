@@ -1,4 +1,4 @@
-package LLDLearningExamples.StreamAPI_Interview;
+package StreamAPI_Interview.InitialRevision;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
