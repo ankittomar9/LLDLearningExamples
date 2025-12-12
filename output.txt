@@ -1,2 +1,2 @@
-Name Starting with A in Reverse 
-[Avesh, Anuj, Aman]
+result :
+ [SOFTWARE, DEVELOPER, LEARNER,  ENGINEER]
