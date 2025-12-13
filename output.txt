@@ -1,2 +1,2 @@
- Last Non repeating char 
-: Optional[B]
+result :
+ [i am, learning, everyday, tobecome, better, engineer]
