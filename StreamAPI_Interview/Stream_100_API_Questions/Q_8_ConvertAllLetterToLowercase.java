@@ -6,7 +6,8 @@ import java.util.stream.Collectors;
 
 public class Q_8_ConvertAllLetterToLowercase {
     public static void main(String args[]){
-        List<String> str=Arrays.asList("I AM","LEARNING","EVERYDAY","TO BECOME","BETTER" ,"ENGINEER");
+        List<String> str=Arrays.asList("I AM","LEARNING","EVERYDAY",
+        "TO BECOME","BETTER" ,"ENGINEER");
 
         List<String> lowerCasewords=str.stream()
         .map(String::toLowerCase)
