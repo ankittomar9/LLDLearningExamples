@@ -13,7 +13,7 @@ public class StreamAPI_find_Maximum {
         .max(Integer::compare)
         .orElseThrow();
 
-        System.out.println(" max number in a given List : " +maxNumber);
+        System.out.println(" Max number in a given List : " +maxNumber);
 
 
 

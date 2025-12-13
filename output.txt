@@ -1,2 +1,2 @@
-result :
- [SOFTWARE, DEVELOPER, LEARNER,  ENGINEER]
+ Last Non repeating char 
+: Optional[B]
