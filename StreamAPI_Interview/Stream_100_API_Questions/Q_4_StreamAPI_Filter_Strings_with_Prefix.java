@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class StreamAPI_Filter_Strings_with_Prefix {
+public class Q_4_StreamAPI_Filter_Strings_with_Prefix {
     public static void main(String args[]){
             //Filter_Strings_with_Prefix
      List<String> words=Arrays.asList("Aman","Anuj","Naman","NoName","Surname"

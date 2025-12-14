@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class StreamAPI_Sort_A_List {
+public class Q_2_StreamAPI_Sort_A_List {
     public static void main(String args[]){
         //Sort a List in Ascending and Descending order
          List<Integer> list=Arrays.asList(4,5,8,4,7,2,6,3,1,4);

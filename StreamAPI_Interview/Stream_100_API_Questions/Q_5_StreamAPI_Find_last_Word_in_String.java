@@ -3,7 +3,7 @@ package StreamAPI_Interview.Stream_100_API_Questions;
 import java.util.Arrays;
 import java.util.Optional;
 
-public class StreamAPI_Find_last_Word_in_String {
+public class Q_5_StreamAPI_Find_last_Word_in_String {
     public static void main(String args[]){
         //Find last Word in String
         String s1="I am a engineer software";
