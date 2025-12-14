@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 
 public class Q_16_Create_a_Custom_Collector1 {
-
+    // Create  a Custom Collector not using inbuilt
     public static void main(String args[]){
         List<String> list = Arrays.asList("Artificial", "Intelligence", 
         "Engineering", "Learning");

@@ -19,7 +19,8 @@ public class Q_11_flatten_merge_Multiple_List_Into_1 {
     .flatMap(List::stream)
     .collect(Collectors.toList());
 
-    System.out.println("Merged Flatten List \n"+merged_Faltten); // Merged into single List
+    // Merged into single List
+    System.out.println("Merged Flatten List \n"+merged_Faltten); 
 
 
     }

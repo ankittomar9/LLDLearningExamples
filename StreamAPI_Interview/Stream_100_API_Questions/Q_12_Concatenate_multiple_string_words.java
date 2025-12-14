@@ -6,6 +6,7 @@ import java.util.List;
 public class Q_12_Concatenate_multiple_string_words {
     public static void main(String args[]){
         //Concatenate multiple words into a single string
+        //using reduce
         List<String> words=Arrays.asList("Java","Collections","is",
         "very","powerful","Feature");
            System.out.println("Original Words \n"+words+"\n");

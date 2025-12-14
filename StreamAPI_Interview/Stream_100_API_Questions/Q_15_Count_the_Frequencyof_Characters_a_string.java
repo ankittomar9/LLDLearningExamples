@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Q_15_Count_the_Frequencyof_Characters_a_string {
+   // Frequency of count of words in a given string
     public static void main(String args[]){
         String myWord="Bookkeeper";
 
