@@ -1,4 +1,5 @@
-Original List 
-[1, 1, 2, 3, 3, 3, 4, 5, 5, 6, 8, 7, 8, 8, 9, 1]
-Unique Elements 
-[1, 3, 5, 8]
+Old words : 
+[Java, Collections, is, very, powerful, Feature]
+
+New String : 
+Java Collections is very powerful Feature
