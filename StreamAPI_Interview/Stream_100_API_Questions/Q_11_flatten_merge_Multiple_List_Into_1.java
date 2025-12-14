@@ -25,4 +25,3 @@ public class Q_11_flatten_merge_Multiple_List_Into_1 {
     }
     
 }
-
