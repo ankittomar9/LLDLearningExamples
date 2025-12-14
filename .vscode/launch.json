@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q_11_Faltten_Merge_Multiple_List_Into_1",
+            "request": "launch",
+            "mainClass": "StreamAPI_Interview.Stream_100_API_Questions.Q_11_Faltten_Merge_Multiple_List_Into_1",
+            "projectName": "LLDLearningExamples_5bf43c95"
+        },
+        {
+            "type": "java",
             "name": "PrintPerfectSquares",
             "request": "launch",
             "mainClass": "PrintPerfectSquares",

@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"github.copilot.enable": "disabled"
+		"github.copilot.enable": "disabled",
+		"java.codeAction.sortMembers.avoidVolatileChanges": false
 	}
 }

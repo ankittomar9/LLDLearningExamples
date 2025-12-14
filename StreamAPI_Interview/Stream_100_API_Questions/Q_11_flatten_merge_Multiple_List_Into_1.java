@@ -1,11 +1,9 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-
-public class Q_11_faltten_merge_Multiple_List_Into_1 {
-    public static void main(String args[]){
+public class Q_11_flatten_merge_Multiple_List_Into_1 {
+     public static void main(String args[]){
         //Flatten or Merge a  List of Lists
 
     List<List<Integer>> list=Arrays.asList(
