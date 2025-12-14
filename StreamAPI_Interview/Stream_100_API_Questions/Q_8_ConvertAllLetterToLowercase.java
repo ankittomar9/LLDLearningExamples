@@ -6,6 +6,8 @@ import java.util.stream.Collectors;
 
 public class Q_8_ConvertAllLetterToLowercase {
     public static void main(String args[]){
+
+        //Convert the given UpperCase String to LowerCase
         List<String> str=Arrays.asList("I AM","LEARNING","EVERYDAY",
         "TO BECOME","BETTER" ,"ENGINEER");
 

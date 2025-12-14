@@ -8,6 +8,9 @@ import java.util.stream.Collectors;
 
 public class Q_10_Find_Duplicates_in_List {
     public static void main(String args[]){
+      //Filter the List for which duplicate elements appear
+      // for example 4 doesn't repeat so not included 
+        
      List<Integer> list=Arrays.asList(1,1,2,3,3,3,4,5,5,6,8,7,8,8,9,1);
 
        Set<Integer> uniqueElements =new HashSet<>();

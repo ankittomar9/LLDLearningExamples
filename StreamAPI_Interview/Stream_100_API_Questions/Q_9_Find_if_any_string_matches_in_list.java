@@ -6,6 +6,9 @@ import java.util.stream.Collectors;
 
 public class Q_9_Find_if_any_string_matches_in_list {
     public static void main(String args[]){
+
+        // Filter the List with a Given String and see If
+       // String matches
         List<String> list=Arrays.asList("api","why",
         "learning api","just chill","build api");
 
