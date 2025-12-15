@@ -1,2 +1,4 @@
-String joined using : 
-Artificial, Intelligence, Engineering, Learning
+Original list 
+[Java, null, collection, null, learning, null, is, null, fun]
+Removed Nulls 
+[Java, collection, learning, is, fun]
