@@ -12,6 +12,7 @@
         "strings": false
     },
     "editor.inlineSuggest.enabled": false,
+    "java.jdt.ls.java.home": null,
     "github.copilot.enable": "disabled",
     "github.copilot.editor.enableAutoCompletions": true,
     "github.copilot.editor.enableAutoCompletionsForAllLanguages": true,
