@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 public class Q_17_Remove_Null_values_in_given_string_of_list {
     public static void main(String args[]){
+        //Remove Null values in list of given strings
 
         List<String> words= Arrays.asList("Java",null,"collection",
                 null,"learning",null,"is",null,"fun");

@@ -7,7 +7,8 @@ import java.util.List;
 public class Q_21_Find_the_given_Nth_largest_element {
     public static void main(String args[]){
         List<Integer> list=Arrays.asList(10,20,50,40,30);
-        //Here if n=3 so the  3rd largest element we have to find
+        //Here if n=3 so the
+        //  Find the nth largest element in the list
          System.out.println("Original List \n"+list);
 
         int nThLargestNumber=list.stream()

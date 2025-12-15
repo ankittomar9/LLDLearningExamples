@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 
 public class Q_20_Filter_List_Even_Odd_By_Partition {
     public static void main(String args[]){
+        //Filter Odd Even By using partition and map
+
         List<Integer> list=Arrays.asList(1,2,3,4,5,6,7,8,9);
         System.out.println("Original List \n"+list);
 
