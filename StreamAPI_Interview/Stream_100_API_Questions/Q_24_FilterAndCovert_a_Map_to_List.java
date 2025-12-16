@@ -5,9 +5,11 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Q_24_FilterAndCovert_a_Map_to_List {
+    //Filter and Convert a Map into List
         public static void main(String args[]){
 
-        Map<String ,Integer> map=Map.of("Z",26,"A", 55, "B", 5, "C", 20, "D", 10);    
+        Map<String ,Integer> map=Map.of("Z",26,"A", 
+        55, "B", 5, "C", 20, "D", 10);    
 
         List<String> MyKeys=map.entrySet().stream()
             .filter(entry ->entry.getValue()>10)

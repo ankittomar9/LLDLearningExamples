@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Q_23_Reverse_Each_String_In_List {
+    //Reverse_Each_String_In_List 
     public static void main(String args[]){
         
         List<String> words=Arrays.asList("Hello","World","in","Java");
