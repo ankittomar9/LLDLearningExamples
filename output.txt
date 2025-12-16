@@ -1,4 +1,2 @@
-Original List 
-[10, 20, 50, 40, 30]
-3rd largest number is 
- 30
+The palindromic List  
+[naman, level, nitin]

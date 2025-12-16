@@ -12,7 +12,7 @@ public class Q_17_Remove_Null_values_in_given_string_of_list {
         List<String> words= Arrays.asList("Java",null,"collection",
                 null,"learning",null,"is",null,"fun");
 
-        System.out.println("Original list \n"+words);
+        System.out.println("Original list \n"+words+"\n");
 
         List<String> filteredNulls=words.stream()
         .filter(Objects::nonNull)
