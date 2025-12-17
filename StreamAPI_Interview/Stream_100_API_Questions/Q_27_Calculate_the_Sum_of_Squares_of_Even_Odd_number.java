@@ -23,6 +23,9 @@ public class Q_27_Calculate_the_Sum_of_Squares_of_Even_Odd_number {
         System.out.println("sum of Squares of Odd Number : \n" +odd_Sum);
         // // Output is 35 (1*1 + 3*3 + 5*5 = 1+9+25= 35)
 
+        // Can we perform the above Odd Even operation in a Single pipeline
+        
+
 
     }
     

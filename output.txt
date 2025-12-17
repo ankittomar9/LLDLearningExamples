@@ -1,2 +1,3 @@
-Separated values are 
-{false=[aman, jatin, travel], true=[naman, nitin, level]}
+Even Odd {false=35, true=56}
+Even Sum : 56
+Odd Sum : 35
