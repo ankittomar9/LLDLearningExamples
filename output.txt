@@ -1,4 +1,2 @@
-sum of Squares of Even Number : 
-56
-sum of Squares of Odd Number : 
-35
+Separated values are 
+{false=[aman, jatin, travel], true=[naman, nitin, level]}
