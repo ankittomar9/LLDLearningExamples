@@ -1,4 +1,3 @@
-sum of Squares of Even Number : 
-56
-sum of Squares of Odd Number : 
-35
+Even Odd {false=35, true=56}
+Even Sum : 56
+Odd Sum : 35

@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Q_28_Calculate_the_Sum_of_Squares_of_Even_Odd_Single_pipeline {
-    
+    // Calculate the Sum of Squares of Even Odd in a Single Pipeline 
     public static void main(String args[]){
         List<Integer> list=Arrays.asList(1,2,3,4,5,6);
 
