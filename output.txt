@@ -1,3 +1,2 @@
-Separated palindromes are 
-{false=[aman, jatin, travel], 
-true=[naman, nitin, level]}
+Skipped elements limited 
+[3, 4, 5, 6, 7, 8, 9]
