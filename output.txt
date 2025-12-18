@@ -1,2 +1,2 @@
-Grouped Length  : {5=[Apple, A_Not],
- 6=[Afruit], 7=[Apricot, Avocado]}
+Joined String is : 
+user-local-bin
