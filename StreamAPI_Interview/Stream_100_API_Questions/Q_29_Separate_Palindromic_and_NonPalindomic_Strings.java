@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Q_29_Separate_Palindromic_and_NonPalindomic_Strings {
+    //Separate palindromes with Non Palindromes Using Map
     public static void main(String args[]){
         List<String> myStrings=Arrays.asList("naman","aman","nitin"
         ,"jatin","level","travel"); 

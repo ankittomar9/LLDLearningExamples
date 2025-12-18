@@ -1,2 +1,3 @@
-Joined String is : 
-user-local-bin
+Separated palindromes are 
+{false=[aman, jatin, travel], 
+true=[naman, nitin, level]}
