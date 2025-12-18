@@ -1,2 +1,4 @@
-Joined String is : 
-user-local-bin
+sum of Squares of Even Number : 
+56
+sum of Squares of Odd Number : 
+35
