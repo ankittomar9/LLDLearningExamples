@@ -6,7 +6,8 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Q_30_Calculate_total_Characters_of_all_String_starting_with_A {
-    //
+    //Calculate the length of strings and store in Map 
+    // length as key and string as value
     public static void main(String args[]){
     List<String> list =Arrays.asList("Apple","Banana","Apricot",
     "Avocado","Cherry","Afruit","A_Not");
