@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Q_34_Group_By_First_Character {
+public class Q_35_Group_By_First_Character {
     // Group Every String By its First characters
     public static void main(String args[]){
         List<String> fruits=Arrays.asList("apple","avocado",

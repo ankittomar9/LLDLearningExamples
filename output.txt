@@ -1,2 +1,1 @@
-Longest Word in Sentence is : 
-Development
+Filtered List is : {a=[apple, avocado, afruit], b=[blueberry, banana], c=[cherry, chiku], n=[notAFruit]}

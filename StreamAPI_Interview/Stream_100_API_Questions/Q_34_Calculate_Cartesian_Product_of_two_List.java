@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Q_34_Calculate_Cartesian_Product_of_two_List {
+    // Cartesian Product of two Lists
+    // Cartesian product -- multiply everything from list 1 to list 2
     public static void main(String args[]){
         List<Integer> list1=Arrays.asList(1,2,3);
         List<Integer> list2=Arrays.asList(1,2,3);

@@ -3,7 +3,7 @@ package StreamAPI_Interview.Stream_100_API_Questions;
 import java.util.Arrays;
 import java.util.List;
 
-public class Q_35_ReduceAndConcatenateStrings {
+public class Q_36_ReduceAndConcatenateStrings {
     public static void main(String args[]){
         // Concatenate strings in reverse order using reduce.
  
