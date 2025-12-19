@@ -1,5 +1,2 @@
-Filtered List is :
- {a=[apple, avocado, afruit],
- b=[blueberry, banana], 
- c=[cherry, chiku],
-  n=[notAFruit]}
+Reversed and Concatenated 
+ Engineer Software am I ?
