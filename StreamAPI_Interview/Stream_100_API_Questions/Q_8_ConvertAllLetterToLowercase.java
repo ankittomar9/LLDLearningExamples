@@ -17,10 +17,6 @@ public class Q_8_ConvertAllLetterToLowercase {
 
          System.out.println("result :\n "+lowerCasewords);
 
-
-
-
-
         
     }
     

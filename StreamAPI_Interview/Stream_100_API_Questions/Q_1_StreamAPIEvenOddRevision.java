@@ -18,7 +18,7 @@ public class Q_1_StreamAPIEvenOddRevision {
         List<Integer> OddList=list1.stream()
         .filter(n->n%2!=0)
         .collect(Collectors.toList());
-        System.out.println("EvenList : "+OddList);
+        System.out.println("EvenOdd : "+OddList);
 
 
     }

@@ -14,8 +14,6 @@ public class Q_15_Count_the_Frequencyof_Characters_a_string {
 
     System.out.println(frequency+"\n");
 
-
-
     }
     
 }

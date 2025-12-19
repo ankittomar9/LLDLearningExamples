@@ -7,7 +7,7 @@ import java.util.List;
 public class Q_13_Find_the_longest_string_in_given_string {
     public static void main(String args[]){
 
-    // Longest String in a Given String  //using Comparator
+    // Longest String in a Given String  using Comparator
      
     List<String> words=Arrays.asList("Software","Developer",
                                     "Engineering","Learning");
