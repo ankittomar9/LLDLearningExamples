@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class Q_40_Student_data_Count_Students_in_Each_Department {
 
     public record Student(String name,int score,int age,String department,String gender,double fees){}
-
+    
     public static void main(String args[]){
              List<Student> students=Arrays.asList(
         new Student("Ankit", 85, 19,"CS","Male", 50000),
@@ -21,16 +21,13 @@ public class Q_40_Student_data_Count_Students_in_Each_Department {
         new Student("Arati", 82, 19, "Electronics", "Female", 59000),
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
      );
-
          // Count Students in Each Department
             Map<String,Long> total_Student_Count_Depart= students.stream()
             .collect(Collectors.groupingBy(
                 Student::department,    
                 Collectors.counting()
             ))  ; 
-    
         System.out.println("Grouped Students by Department \n "+total_Student_Count_Depart);
-
     }
 }
 

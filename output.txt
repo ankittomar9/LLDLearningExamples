@@ -1,7 +1,4 @@
 Grouped Students by Department 
-{
-CS=69.33333333333333,
-Mechanical=37.5, 
-Electronics=88.5,
-IT=80.0
-}
+ {CS=3, Mechanical=2,
+  Electronics=2,
+   IT=3}
