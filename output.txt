@@ -1,4 +1,5 @@
 Grouped Students by Department 
- {CS=3, Mechanical=2,
-  Electronics=2,
-   IT=3}
+ {CS=[Ankit, Aman, Subham],
+  Mechanical=[Rahul, Vicky],
+   Electronics=[Megha, Arati],
+    IT=[Neha, Priya, Deepak]}
