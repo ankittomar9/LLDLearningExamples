@@ -1,14 +1,12 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Q_41_Student_data_Average_per_Score {
-   
-     public record Student(String name,int score,int age,String department,String gender,double fees){}
 
+   public record Student(String name,int score,int age,String department,String gender,double fees){}
     public static void main(String args[]){
              List<Student> students=Arrays.asList(
         new Student("Ankit", 85, 19,"CS","Male", 50000),
@@ -22,15 +20,13 @@ public class Q_41_Student_data_Average_per_Score {
         new Student("Arati", 82, 19, "Electronics", "Female", 59000),
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
      );
-
-         // Count Students in Each Department
-            Map<String,Long> total_Student_Count_Depart= students.stream()
+         // Average Score per Department
+            Map<String,Double> average_score_per_department= students.stream()  // why Double think its average
             .collect(Collectors.groupingBy(
                 Student::department,    
-                Collectors.counting()
+                Collectors.averagingInt(Student::score)
             ))  ; 
-    
-        System.out.println("Grouped Students by Department \n "+total_Student_Count_Depart);
 
+        System.out.println("Grouped Students by Department \n "+average_score_per_department);
     }
 }
