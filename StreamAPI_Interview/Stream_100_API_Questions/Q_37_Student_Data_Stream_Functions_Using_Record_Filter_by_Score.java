@@ -19,15 +19,12 @@ public class Q_37_Student_Data_Stream_Functions_Using_Record_Filter_by_Score {
         new Student("Arati", 82, 19, "Electronics", "Female", 59000),
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
      );
-    
     // 1. Filter by Score (> 80) and get Names
-       
      List <String> topPerformers=students.stream()
      .filter(s->s.score()>80)
      .map(Student::name)
      .collect(Collectors.toList());
-     
+
      System.out.println("Top Performers : "+topPerformers);    
-    
     }
 }
