@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Q_39_Student_Data_Group_Students_by_Department {
-
+    
     public record Student(String name,int score,int age,String department,String gender,double fees){}
 
     public static void main(String args[]){

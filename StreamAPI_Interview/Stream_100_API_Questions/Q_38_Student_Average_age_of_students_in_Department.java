@@ -1,9 +1,8 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
 import java.util.Arrays;
 import java.util.List;
-
 public class Q_38_Student_Average_age_of_students_in_Department {
-
+    
     public record Student(String name,int score,int age,String department,String Gender,double fees ){}
     
     public static void main(String args[]){
@@ -20,19 +19,12 @@ public class Q_38_Student_Average_age_of_students_in_Department {
         new Student("Arati", 82, 19, "Electronics", "Female", 59000),
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
      );
-
-
      // Average age of students in "CS" Department
         double averageAge=students.stream()
       .filter(n->"CS".equals(n.department()))
       .mapToInt(Student::age)
       .average()
-      .orElse(0.0);
-        
+      .orElse(0.0); 
       System.out.println("Average age in CS department is : \n "+averageAge);
-
-
-
-
     }
 }

@@ -1,5 +1,2 @@
-Grouped Students by Department 
- {CS=[Ankit, Aman, Subham],
-  Mechanical=[Rahul, Vicky],
-   Electronics=[Megha, Arati],
-    IT=[Neha, Priya, Deepak]}
+Average age in CS department is : 
+ 20.666666666666668
