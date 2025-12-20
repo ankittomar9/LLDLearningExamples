@@ -4,8 +4,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Q_39_Student_Data_Group_Students_by_Department {
+public class Q_40_Student_data_Count_Students_in_Each_Department {
+
     public record Student(String name,int score,int age,String department,String gender,double fees){}
+
     public static void main(String args[]){
              List<Student> students=Arrays.asList(
         new Student("Ankit", 85, 19,"CS","Male", 50000),
@@ -20,15 +22,16 @@ public class Q_39_Student_Data_Group_Students_by_Department {
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
      );
 
-         // Group Students by Department
-
-        Map<String,List<String>> groupedByDepartments=students.stream()
-        .collect(Collectors.groupingBy(Student::department,   // Key
-            Collectors.mapping(Student::name,                   // Downstrteam Collector
-             Collectors.toList())                           // Take only names
-        ));
-
-        System.out.println("Grouped Students by Department \n "+groupedByDepartments);
+         // Count Students in Each Department
+            Map<String,Long> total_Student_Count_Depart= students.stream()
+            .collect(Collectors.groupingBy(
+                Student::department,    
+                Collectors.counting()
+            ))  ; 
+    
+        System.out.println("Grouped Students by Department \n "+total_Student_Count_Depart);
 
     }
 }
+
+

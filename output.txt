@@ -1,2 +1,2 @@
-Average age in CS department is : 
- 20.666666666666668
+Grouped Students by Department 
+ {CS=3, Mechanical=2, Electronics=2, IT=3}
