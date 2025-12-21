@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class Q_41_Student_data_Partition_Students_Pass_Fail {
         public record Student(String name,int score,int age,String department,String gender,double fees){}
           public static void main(String args[]){
-          List<Student> students=Arrays.asList(
+        List<Student> students=Arrays.asList(
         new Student("Ankit", 85, 19,"CS","Male", 50000),
         new Student("Neha",92,20,"IT","Female",55000),
         new Student("Aman",45,21,"CS","Male",48000),
