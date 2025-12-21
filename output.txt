@@ -1,2 +1,4 @@
-Top Performers : 
-[Ankit, Neha, Priya, Megha, Arati]
+Passed: 
+[Ankit, Neha, Priya, Subham, Megha, Arati, Deepak]
+Failed: 
+[Aman, Rahul, Vicky]
