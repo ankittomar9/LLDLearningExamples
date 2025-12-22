@@ -1,2 +1,3 @@
-Department of IT: 
-Neha, Priya, Deepak
+Average Fees by Gender: 
+{Female=58000.0,
+ Male=48666.666666666664}

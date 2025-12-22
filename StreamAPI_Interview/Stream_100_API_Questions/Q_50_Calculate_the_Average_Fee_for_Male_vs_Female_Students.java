@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Q_49_Check_if_All_Students_in_a_Dept_are_Above_a_Certain_Age {
-         public record Student(String name,int score,int age,String department,String gender,double fees ){}
+public class Q_50_Calculate_the_Average_Fee_for_Male_vs_Female_Students {
+             public record Student(String name,int score,int age,String department,String gender,double fees ){}
     public static void main(String args[]){
             List<Student> students=Arrays.asList(
         new Student("Ankit", 85, 19,"CS","Male", 50000),
@@ -20,13 +20,12 @@ public class Q_49_Check_if_All_Students_in_a_Dept_are_Above_a_Certain_Age {
         new Student("Arati", 82, 19, "Electronics", "Female", 59000),
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
      );
-            //Check if All Students in a Dept are Above a Certain Age
-                Map<Boolean, List<String>> partitionedByAge = students.stream()
-            .collect(Collectors.partitioningBy(
-                s -> s.age() > 20,
-                Collectors.mapping(Student::name, Collectors.toList())
+    // Calculate the Average Fee for Male vs. Female Students?
+    Map<String,Double> avg_Fees_By_Gender=students.stream()
+    .collect(Collectors.groupingBy(Student::gender,
+        Collectors.averagingDouble(Student::fees)
     ));
-            System.out.println(""+partitionedByAge);
-    }
-}
 
+   System.out.println("Average Fees by Gender: \n" + avg_Fees_By_Gender);
+}
+}   
