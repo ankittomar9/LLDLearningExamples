@@ -1,6 +1,3 @@
-Second Highest : 
-Optional[Student
-[
-name=Neha, score=92, age=20, department=IT, gender=Female, fees=55000.0
-]
-]
+Highest Score: 95
+Lowest Score: 35
+Average Score: 70.0

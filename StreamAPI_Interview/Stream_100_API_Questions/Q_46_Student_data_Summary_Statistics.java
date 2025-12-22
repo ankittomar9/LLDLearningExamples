@@ -1,9 +1,7 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
-
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
-
 public class Q_46_Student_data_Summary_Statistics {
  public record Student(String name,int score,int age,String department,String gender,double fees ){}
     public static void main(String args[]){
@@ -19,19 +17,13 @@ public class Q_46_Student_data_Summary_Statistics {
         new Student("Arati", 82, 19, "Electronics", "Female", 59000),
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
      );
-
      //calculate the count, min, max, sum, and average of all student
      IntSummaryStatistics stats=students.stream()
      .mapToInt(Student::score)
      .summaryStatistics();
-
         System.out.println("Highest Score: " + stats.getMax());
         System.out.println("Lowest Score: " + stats.getMin());
-        System.out.println("Average Score: " + stats.getAverage());
-
-    
-
-
+        System.out.println("Average Score: " + stats.getAverage()); 
     }
     
 }
