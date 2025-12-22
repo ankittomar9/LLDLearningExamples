@@ -1,7 +1,2 @@
-Youngest Student are : 
-{Female=Optional
-[Student
-[name=Priya, score=88, age=18, department=IT, gender=Female, fees=60000.0]],
-Male=Optional
-[Student
-[name=Ankit, score=85, age=19, department=CS, gender=Male, fees=50000.0]]}
+Department of IT: 
+Neha, Priya, Deepak
