@@ -1,2 +1,4 @@
-Fees per Department : 
-{CS=150000.0, Mechanical=89000.0, Electronics=117000.0, IT=168000.0}
+Grouped Students by Department 
+ {CS=69.33333333333333,
+  Mechanical=37.5,
+  Electronics=88.5, IT=80.0}

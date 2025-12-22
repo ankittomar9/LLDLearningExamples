@@ -1,13 +1,13 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-public class Q_41_Student_data_Average_per_Score {
 
-   public record Student(String name,int score,int age,String department,String gender,double fees){}
+import java.util.Arrays;
+import java.util.IntSummaryStatistics;
+import java.util.List;
+
+public class Q_46_Student_data_Summary_Statistics {
+ public record Student(String name,int score,int age,String department,String gender,double fees ){}
     public static void main(String args[]){
-             List<Student> students=Arrays.asList(
+            List<Student> students=Arrays.asList(
         new Student("Ankit", 85, 19,"CS","Male", 50000),
         new Student("Neha",92,20,"IT","Female",55000),
         new Student("Aman",45,21,"CS","Male",48000),
@@ -19,14 +19,19 @@ public class Q_41_Student_data_Average_per_Score {
         new Student("Arati", 82, 19, "Electronics", "Female", 59000),
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
      );
-         // Average Score per Department
-            Map<String,Double> average_score_per_department= students.stream()  
-            // why Double think its average
-            .collect(Collectors.groupingBy(
-                Student::department,    
-                Collectors.averagingInt(Student::score)
-            ))  ; 
 
-        System.out.println("Grouped Students by Department \n "+average_score_per_department);
+     //calculate the count, min, max, sum, and average of all student
+     IntSummaryStatistics stats=students.stream()
+     .mapToInt(Student::score)
+     .summaryStatistics();
+
+        System.out.println("Highest Score: " + stats.getMax());
+        System.out.println("Lowest Score: " + stats.getMin());
+        System.out.println("Average Score: " + stats.getAverage());
+
+    
+
+
     }
+    
 }
