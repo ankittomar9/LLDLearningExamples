@@ -1,4 +1,2 @@
-Passed: 
-{
-    CS=Optional[Student[name=Ankit, score=85, age=19, department=CS, gender=Male, fees=50000.0]],
- Mechanical=Optional[Student[name=Vicky, score=40, age=21, department=Mechanical, gender=Male, fees=44000.0]], Electronics=Optional[Student[name=Megha, score=95, age=20, department=Electronics, gender=Female, fees=58000.0]], IT=Optional[Student[name=Neha, score=92, age=20, department=IT, gender=Female, fees=55000.0]]}
+Fees per Department : 
+{CS=150000.0, Mechanical=89000.0, Electronics=117000.0, IT=168000.0}
