@@ -1,9 +1,10 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
+
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
-public class Q_48_Comma_Separated_Names_for_a_Specific_Department {
-     public record Student(String name,int score,int age,String department,String gender,double fees ){}
+
+public class Q_49_Check_if_All_Students_in_a_Dept_are_Above_a_Certain_Age {
+         public record Student(String name,int score,int age,String department,String gender,double fees ){}
     public static void main(String args[]){
             List<Student> students=Arrays.asList(
         new Student("Ankit", 85, 19,"CS","Male", 50000),
@@ -17,14 +18,4 @@ public class Q_48_Comma_Separated_Names_for_a_Specific_Department {
         new Student("Arati", 82, 19, "Electronics", "Female", 59000),
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
      );
-        //Comma-Separated Names for a Specific Department
-        String isStudentNames=students.stream()
-        .filter(s->"IT".equalsIgnoreCase(s.department))
-        .map(Student::name)
-        .collect(Collectors.joining(", "));
-        System.out.println("Department of IT: \n"+isStudentNames);
-
-        }
-
 }
-
