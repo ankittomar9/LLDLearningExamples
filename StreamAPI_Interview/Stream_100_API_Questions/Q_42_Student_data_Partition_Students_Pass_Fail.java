@@ -1,5 +1,4 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -28,7 +27,6 @@ public class Q_42_Student_data_Partition_Students_Pass_Fail {
 
         System.out.println("Passed: \n"+result_Pass_Fail.get(true));
          System.out.println("Failed: \n"+result_Pass_Fail.get(false));    
-
     }
     
 }

@@ -1,4 +1,6 @@
-Grouped Students by Department 
- {CS=69.33333333333333,
-  Mechanical=37.5,
-  Electronics=88.5, IT=80.0}
+Second Highest : 
+Optional[Student
+[
+name=Neha, score=92, age=20, department=IT, gender=Female, fees=55000.0
+]
+]

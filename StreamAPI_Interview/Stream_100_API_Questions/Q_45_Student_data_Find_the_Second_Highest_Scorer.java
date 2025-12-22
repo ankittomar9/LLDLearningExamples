@@ -1,10 +1,8 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
-
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
-
 public class Q_45_Student_data_Find_the_Second_Highest_Scorer {
     public record Student(String name,int score,int age,String department,String gender,double fees ){}
     public static void main(String args[]){
@@ -19,9 +17,7 @@ public class Q_45_Student_data_Find_the_Second_Highest_Scorer {
         new Student("Vicky", 40, 21, "Mechanical", "Male", 44000),
         new Student("Arati", 82, 19, "Electronics", "Female", 59000),
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
-     );
-    
-
+     );    
     //Find the Second Highest Scorer
      // since this is Optional value might and might not present
      Optional<Student> secondHighest=students.stream()    

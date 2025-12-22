@@ -21,15 +21,13 @@ public class Q_43_Student_data_Partition_Highest_Scorer_Per_Department{
         new Student("Arati", 82, 19, "Electronics", "Female", 59000),
        new Student("Deepak", 60, 23, "IT", "Male", 53000)
      );
-
-     //Top Performing Student at each Department
+     //Top Performing Student at each Department 
      Map<String,Optional<Student>> top_Scorer_Per_Department=students.stream()
                 .collect(Collectors.groupingBy(
                     Student::department,
                     Collectors.maxBy(Comparator.comparingInt(Student::score))
                 ));
-
-     System.out.println("Passed: \n"+top_Scorer_Per_Department);
+     System.out.println("Top Scorer : \n"+top_Scorer_Per_Department);
  
     }
 }
