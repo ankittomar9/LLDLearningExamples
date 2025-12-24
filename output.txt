@@ -1,2 +1,1 @@
-first non-repeated character : 
-j
+Sum of digits is 15
