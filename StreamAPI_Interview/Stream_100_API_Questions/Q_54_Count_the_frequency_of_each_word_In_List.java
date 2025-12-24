@@ -8,7 +8,10 @@ import java.util.stream.Collectors;
 
 public class Q_54_Count_the_frequency_of_each_word_In_List {
     public static void main(String args[]){
-        List<String> words = Arrays.asList("apple", "banana", "apple", "cherry", "banana", "apple");
+        //Count the frequency of each word in a List
+
+        List<String> words = Arrays.asList("apple", "banana", "apple",
+         "cherry", "banana", "apple");
 
         Map<String,Long> countMap=words.stream()
         .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));

@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 
 public class Q_51_Find_Non_Repeated_Character_In_String {
     public static void main(String args[]){
+        //Find the first non-repeated character in a String
         String input="java articles are awesome";
-
         Character result;
         result = input.chars()
                 .mapToObj(c -> (char) c)
@@ -17,7 +17,7 @@ public class Q_51_Find_Non_Repeated_Character_In_String {
                 .map(Map.Entry::getKey)
                 .findFirst()
                 .get();
-
+                
                 System.out.println("first non-repeated character : \n"+result);
 
     }
