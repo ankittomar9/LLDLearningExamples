@@ -11,15 +11,15 @@ public class Q_51_Find_Non_Repeated_Character_In_String {
         Character result;
         result = input.chars()
                 .mapToObj(c -> (char) c)
-                .collect(Collectors.groupingBy(c -> c, LinkedHashMap::new, Collectors.counting()))
+                .collect(Collectors.groupingBy(c -> c,
+                 LinkedHashMap::new, Collectors.counting()))
                 .entrySet().stream()
                 .filter(entry -> entry.getValue() == 1)
                 .map(Map.Entry::getKey)
                 .findFirst()
                 .get();
-                
-                System.out.println("first non-repeated character : \n"+result);
 
+                System.out.println("first non-repeated character : \n"+result);
     }
     
 }
