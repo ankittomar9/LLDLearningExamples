@@ -1,2 +1,2 @@
-Joined uppercase string : 
-JAVA - PYTHON - C++
+minimum length word is : 
+2
