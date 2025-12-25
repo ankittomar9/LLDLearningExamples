@@ -1,2 +1,3 @@
-? Old Way: I had to type a lot of code.
- Lambda Way: Short and sweet.
+Reversed String in Another String : 
+
+avaJ smaertS  era lufrewoP
