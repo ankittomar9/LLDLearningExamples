@@ -1,4 +1,2 @@
-Process ID: 20432
-Main Thread Name: main
-Worker Thread Name: Thread-0
-Worker is sharing the same Process ID: 20432
+? Old Way: I had to type a lot of code.
+ Lambda Way: Short and sweet.

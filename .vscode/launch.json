@@ -3,7 +3,14 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [      
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Q_02_Thread_Creation_Ways",
+            "request": "launch",
+            "mainClass": "ConcurrencyJavaInterview.Q_02_Thread_Creation_Ways",
+            "projectName": "LLDLearningExamples_5bf43c95"
+        },
         {
             "type": "jdk",
             "request": "launch",
