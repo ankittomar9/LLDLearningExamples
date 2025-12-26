@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Q_59_Convert_and_join_with_a_hyphen {
+
+    //Convert a List of Strings to Uppercase and Join with a Hyphen
     public static void main(String args[]){
 
         List<String> list =Arrays.asList("java","python","c++");
