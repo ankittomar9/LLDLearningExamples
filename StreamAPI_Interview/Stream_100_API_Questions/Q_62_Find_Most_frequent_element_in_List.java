@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 public class Q_62_Find_Most_frequent_element_in_List {
     public static void main(String args[]){
         //62. Find the most frequent element in a List
-
         List<String> fruits=Arrays.asList("apple", "apple", "banana",
          "cherry", "banana", "apple");
 
