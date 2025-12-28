@@ -1,2 +1,3 @@
-List is  
- [1Apple, 2Orange]
+Count of vowels in Each words : 
+{Java=2, Apple=2, 
+Stream=2, Interview=4}
