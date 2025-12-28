@@ -1,2 +1,3 @@
-Second smallest element is 
-2
+numbers grouped by ten 's place
+{80=[81], 20=[22, 28],
+ 10=[12, 15], 30=[31, 39]}
