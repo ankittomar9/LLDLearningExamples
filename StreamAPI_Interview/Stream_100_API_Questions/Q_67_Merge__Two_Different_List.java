@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Q_67_Merge__Two_Different_List {
+    //67. Merge Two Separate Lists into a Single Map (Zipping)
     public static void main(String args[]){
         List<String> names=Arrays.asList("Ankit","Neha","Aman");
 
