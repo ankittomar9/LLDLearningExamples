@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Q_66_Map_Where_Key_String_Value_Vowel_Count {
+    //66. Create a Map where the Key is the String and Value is its Vowel Count
     public static void main(String args[]){
         List<String> words=Arrays.asList("Apple","Java","Stream","Interview");
 
