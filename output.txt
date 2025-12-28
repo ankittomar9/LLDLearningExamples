@@ -1,2 +1,4 @@
-List is  
- [1Apple, 2Orange]
+Is num prime 
+true
+Is num1 prime 
+false
