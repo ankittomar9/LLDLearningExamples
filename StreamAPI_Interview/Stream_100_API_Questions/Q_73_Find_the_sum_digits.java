@@ -2,6 +2,7 @@ package StreamAPI_Interview.Stream_100_API_Questions;
 
 public class Q_73_Find_the_sum_digits {
     public static void main(String args[]){
+       // 73. Find the Sum of Digits of a Number
        int number=12345;
        int sum=String.valueOf(number).chars()
        .map(Character::getNumericValue) 
