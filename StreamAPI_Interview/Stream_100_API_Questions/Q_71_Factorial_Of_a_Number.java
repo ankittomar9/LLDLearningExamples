@@ -4,6 +4,7 @@ import java.util.stream.LongStream;
 
 public class Q_71_Factorial_Of_a_Number {
     public static void main(String args[]){
+        // 71. Find the Factorial of a Number
         int n=5;
         long factorial=LongStream.rangeClosed(1, n)
         .reduce(1, (a,b)->a*b);
