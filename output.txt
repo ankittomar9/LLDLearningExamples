@@ -1,4 +1,2 @@
-Is num prime 
-true
-Is num1 prime 
-false
+pair is 
+[I@6d03e736
