@@ -1,2 +1,2 @@
-Product of All numbers in List is 
-120
+Second largest element is : 
+15
