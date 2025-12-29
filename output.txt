@@ -1,2 +1,2 @@
-pair is 
-[I@6d03e736
+Product of All numbers in List is 
+120
