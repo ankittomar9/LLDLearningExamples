@@ -15,7 +15,8 @@ public class Q_78_Remove_element_in_a_list {
         .filter(i->i != elementToRemove)
         .collect(Collectors.toList());
 
-        System.out.println("\nList after removed element : "+elementToRemove + "\n " +resultList);
+ System.out.println("\nList after removed element : "+elementToRemove + "\n " );
+ System.out.println(""+resultList);
 
     }
     

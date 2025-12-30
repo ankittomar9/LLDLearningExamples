@@ -1,10 +1,7 @@
-For Input purpose
-
+For Input purpose Random Result
 Random Numbers from 1 to 100 are : 
 [44, 9, 2, 26, 99]
-
 Random Numbers from 1 to 100 are : 
 [39, 44, 35, 96, 96]
-
 Random Numbers from 1 to 100 are : 
 [23, 7, 39, 8, 93]
