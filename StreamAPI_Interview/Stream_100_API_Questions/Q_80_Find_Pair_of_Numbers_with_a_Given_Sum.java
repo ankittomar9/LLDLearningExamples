@@ -15,10 +15,7 @@ public class Q_80_Find_Pair_of_Numbers_with_a_Given_Sum {
         .filter(b->a+b == targetSum && a  < b )
         .map(b->Arrays.asList(a,b)))
         .collect(Collectors.toList());
-
         System.out.println("pairs are  : \n"+pairs);
-
-
 
     }
     
