@@ -1,11 +1,12 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
-public class Q_83_Emp_Data_Youngest_Male_Employee {
+public class Q_85_Emp_Data_Employees_in_sales {
     public record Employee(int id,String name,int age,String gender,
-        String Department,int yearOfJoining,double salary){}
+        String department,int yearOfJoining,double salary){}
     public static void main(String args[]){
         List<Employee> employeeList =Arrays.asList(
     new Employee(111,"Ankit Singh",27,"Male","Product Development",2011,50000.0),
@@ -17,15 +18,13 @@ public class Q_83_Emp_Data_Youngest_Male_Employee {
     new Employee(188, "Wang Liu", 31, "Male", "Product Development", 2015, 34500.0),
     new Employee(199, "Amelia Zoe", 24, "Female", "Sales", 2016, 11500.0));
 
-            //83. Find the youngest  employee in the Product Development department
-            Employee youngest=employeeList.stream()
-            .filter(n->"Product Development".equals(n.Department()))
-            .min(Comparator.comparingInt(Employee::age))
-            .orElseThrow();
+       //     85. How many male and female employees are there in the  team?
+           Map<String,Long> salesEmployeeCount=employeeList.stream()
+           .collect(Collectors.groupingBy(Employee::gender, Collectors.counting()));
        
 
-            System.out.println("youngest employee in  Product Development department : \n ");    
-            System.out.println(youngest);
+            System.out.println("male and female employees : \n ");    
+            System.out.println(salesEmployeeCount);
 
     }
     
