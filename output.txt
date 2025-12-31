@@ -1,6 +1,10 @@
-average salary for each department : 
+youngest employee in
+  Product Development department : 
  
-{Product Development=39000.0,
- Sales=12500.0, 
- Infrastructure=18000.0,
-  HR=23850.0}
+Employee[id=111, 
+name=Ankit Singh, 
+age=27, 
+gender=Male, 
+Department=Product Development, 
+yearOfJoining=2011, 
+salary=50000.0]
