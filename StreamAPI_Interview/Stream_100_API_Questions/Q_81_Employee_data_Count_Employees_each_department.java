@@ -2,6 +2,8 @@ package StreamAPI_Interview.Stream_100_API_Questions;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Q_81_Employee_data_Count_Employees_each_department {
     public record Employee(int id,String name,int age,String gender,
@@ -15,10 +17,14 @@ public class Q_81_Employee_data_Count_Employees_each_department {
     new Employee(144, "Murali Gowda", 28, "Male", "Product Development", 2014, 32500.0),
     new Employee(155, "Nima Roy", 27, "Female", "HR", 2013, 22700.0),
     new Employee(188, "Wang Liu", 31, "Male", "Product Development", 2015, 34500.0),
-    new Employee(199, "Amelia Zoe", 24, "Female", "Sales", 2016, 11500.0)
-       
-        );
+    new Employee(199, "Amelia Zoe", 24, "Female", "Sales", 2016, 11500.0));
 
+            //81. Count the number of employees in each department
+
+            Map<String ,Long> result=employeeList.stream()
+            .collect(Collectors.groupingBy(Employee::Department,Collectors.counting()));
+
+            System.out.println(result);
     }
     
 }

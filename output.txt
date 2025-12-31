@@ -1,2 +1,4 @@
-pairs are  : 
-[[1, 5], [2, 4]]
+{Product Development=3,
+ Sales=2,
+  Infrastructure=1,
+   HR=2}
