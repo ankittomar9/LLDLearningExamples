@@ -21,10 +21,15 @@ public class Q_87_Find_highest_number_of_employees_in_deparment {
     new Employee(199, "Amelia Zoe", 24, "Female", "Sales", 2016, 11500.0));
 
      //87. Find the department with the highest number of employees
-            Map<Boolean,List<Employee>> partitionByAge=employeeList.stream()
-            .collect(Collectors.partitioningBy(e->e.age()>30));
+            String largestDept=employeeList.stream()
+            .collect(Collectors.groupingBy(
+                Employee::department,Collectors.counting()))
+                .entrySet().stream()
+                .max(Map.Entry.comparingByValue())
+                .map(Map.Entry::getKey)
+                .orElse("N/A");
 
-            System.out.println(partitionByAge);
+                System.out.println("Largest department is : \n"+largestDept);
     
     }
     
