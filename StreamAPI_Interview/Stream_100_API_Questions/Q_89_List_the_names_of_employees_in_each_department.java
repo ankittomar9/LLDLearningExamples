@@ -10,21 +10,22 @@ public class Q_89_List_the_names_of_employees_in_each_department {
      String department,int yearOfJoining,double salary){}
     public static void main(String args[]){    
 
-        List<Employee> employeeList =Arrays.asList(
-    new Employee(111,"Ankit Singh",27,"Male","Product Development",2011,50000.0),
-    new Employee(111, "Jiya Brein", 32, "Female", "HR", 2011, 25000.0),
-    new Employee(122, "Paul Niksui", 25, "Male", "Sales", 2015, 13500.0),
-    new Employee(133, "Martin Theron", 29, "Male", "Infrastructure", 2012, 18000.0),
-    new Employee(144, "Murali Gowda", 28, "Male", "Product Development", 2014, 32500.0),
-    new Employee(155, "Nima Roy", 27, "Female", "HR", 2013, 22700.0),
-    new Employee(188, "Wang Liu", 31, "Male", "Product Development", 2015, 34500.0),
-    new Employee(199, "Amelia Zoe", 24, "Female", "Sales", 2016, 11500.0));
-
+          List<Employee> employeeList = Arrays.asList(
+    new Employee(111, "Ankit Singh", 27, "Male", "Product Development", 2011, 50000.0),
+    new Employee(112, "Pam Beesly", 24, "Female", "HR", 2011, 25000.0),
+    new Employee(122, "Jim Halpert", 25, "Male", "Sales", 2015, 23500.0),
+    new Employee(133, "Creed Bratton", 29, "Male", "Infrastructure", 2012, 18000.0), 
+    new Employee(144, "Dwight Schrute", 28, "Male", "Product Development", 2014, 32500.0),
+    new Employee(155, "Angela Martin", 27, "Female", "HR", 2013, 22700.0),
+    new Employee(188, "Michael Scott", 31, "Male", "Product Development", 2015, 34500.0),
+    new Employee(199, "Phyllis Vance", 24, "Female", "Sales", 2016, 11500.0)
+);
        //   89. List the names of employees in each department
-            Map<Boolean,List<Employee>> partitionByAge=employeeList.stream()
-            .collect(Collectors.partitioningBy(e->e.age()>30));
+            Map<String,List<String>> namesByDepartment=employeeList.stream()
+            .collect(Collectors.groupingBy(Employee::department,
+                Collectors.mapping(Employee::name, Collectors.toList())));
 
-            System.out.println(partitionByAge);
+            System.out.println(namesByDepartment);
     
     }
     

@@ -3,7 +3,7 @@ package StreamAPI_Interview.Stream_100_API_Questions;
 import java.util.Arrays;
 import java.util.List;
 
-public class Q_90_Find_the_highest_salary_in_the_whole_organization {
+public class Q_91_Find_the_Employee_with_the_Second_Highest_Salary {
     public record Employee(int id,String name,int age,String gender,
      String department,int yearOfJoining,double salary){}
     public static void main(String args[]){    
@@ -18,7 +18,7 @@ public class Q_90_Find_the_highest_salary_in_the_whole_organization {
     new Employee(188, "Michael Scott", 31, "Male", "Product Development", 2015, 34500.0),
     new Employee(199, "Phyllis Vance", 24, "Female", "Sales", 2016, 11500.0)
 );
-       //    90. Find the highest salary in the whole organization
+       //    91. Find the Employee with the Second Highest Salary
           double maxSalary=employeeList.stream()
           .mapToDouble(Employee::salary)
           .max()
