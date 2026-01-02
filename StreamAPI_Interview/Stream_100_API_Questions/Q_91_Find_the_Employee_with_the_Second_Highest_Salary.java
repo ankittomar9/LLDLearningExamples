@@ -1,6 +1,7 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Q_91_Find_the_Employee_with_the_Second_Highest_Salary {
@@ -18,14 +19,14 @@ public class Q_91_Find_the_Employee_with_the_Second_Highest_Salary {
     new Employee(188, "Michael Scott", 31, "Male", "Product Development", 2015, 34500.0),
     new Employee(199, "Phyllis Vance", 24, "Female", "Sales", 2016, 11500.0)
 );
-       //    91. Find the Employee with the Second Highest Salary
-          double maxSalary=employeeList.stream()
-          .mapToDouble(Employee::salary)
-          .max()
-          .orElse(0.0);
-          System.out.print("Max salary of Employee is : \n");
-            System.out.println(maxSalary);
-    
+       //91. Find the Employee with the Second Highest Salary
+        Employee secondHighest=employeeList.stream()
+        .sorted(Comparator.comparingDouble(Employee::salary).reversed())
+        .skip(1)
+        .findFirst()
+        .orElse(null);
+
+        System.out.println("Second Highest Salary \n"+secondHighest);
     }
     
 }
