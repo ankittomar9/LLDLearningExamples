@@ -18,13 +18,8 @@ public class Q_90_Find_the_highest_salary_in_the_whole_organization {
     new Employee(188, "Michael Scott", 31, "Male", "Product Development", 2015, 34500.0),
     new Employee(199, "Phyllis Vance", 24, "Female", "Sales", 2016, 11500.0)
 );
-       //    90. Find the highest salary in the whole organization
-          double maxSalary=employeeList.stream()
-          .mapToDouble(Employee::salary)
-          .max()
-          .orElse(0.0);
-          System.out.print("Max salary of Employee is : \n");
-            System.out.println(maxSalary);
+       //  92. Get the Highest Paid Employee in Each Department
+         Map<String ,Optional<Employee>>
     
     }
     
