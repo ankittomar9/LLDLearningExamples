@@ -2,8 +2,10 @@ package StreamAPI_Interview.Stream_100_API_Questions;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
-public class Q_90_Find_the_highest_salary_in_the_whole_organization {
+public class Q_95_Find_the_Department_with_the_Highest_Average_Salary {
     public record Employee(int id,String name,int age,String gender,
      String department,int yearOfJoining,double salary){}
     public static void main(String args[]){    
@@ -18,14 +20,16 @@ public class Q_90_Find_the_highest_salary_in_the_whole_organization {
     new Employee(188, "Michael Scott", 31, "Male", "Product Development", 2015, 34500.0),
     new Employee(199, "Phyllis Vance", 24, "Female", "Sales", 2016, 11500.0)
 );
-       //    90. Find the highest salary in the whole organization
-          double maxSalary=employeeList.stream()
-          .mapToDouble(Employee::salary)
-          .max()
-          .orElse(0.0);
-          System.out.print("Max salary of Employee is : \n");
-            System.out.println(maxSalary);
+       //  95. Find the Department with the Highest Average Salary
+          String bestPayingDept=employeeList.stream()
+          .collect(Collectors.groupingBy(
+            Employee::department,
+            Collectors.averagingDouble(Employee::salary) 
+        ))
+          .entrySet().stream().max(Map.Entry.comparingByValue())
+          .map(Map.Entry::getKey)
+          .orElse("N/A");
     
+          System.out.println("Best Paying Department: " + bestPayingDept);
     }
-    
-}
+  }
