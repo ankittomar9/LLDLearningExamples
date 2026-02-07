@@ -1,9 +1,13 @@
 package StreamAPI_Interview.Stream_100_API_Questions;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
-public class Q_90_Find_the_highest_salary_in_the_whole_organization {
+public class Q_92_Get_the_Highest_Paid_Employee_in_Each_Department {
     public record Employee(int id,String name,int age,String gender,
      String department,int yearOfJoining,double salary){}
     public static void main(String args[]){    
@@ -19,7 +23,12 @@ public class Q_90_Find_the_highest_salary_in_the_whole_organization {
     new Employee(199, "Phyllis Vance", 24, "Female", "Sales", 2016, 11500.0)
 );
        //  92. Get the Highest Paid Employee in Each Department
-         Map<String ,Optional<Employee>>
+         Map<String ,Optional<Employee>> highestPaidByDept=employeeList.stream()
+         .collect(Collectors.groupingBy(Employee::department,
+            Collectors.maxBy(Comparator.comparingDouble(Employee::salary))
+         ));
+
+         System.out.println(highestPaidByDept);
     
     }
     
