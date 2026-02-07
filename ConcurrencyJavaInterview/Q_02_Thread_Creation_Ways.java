@@ -1,6 +1,5 @@
 package ConcurrencyJavaInterview;
 public class Q_02_Thread_Creation_Ways {
-
     public static class MyThread extends Thread{
         public void run(){
             System.out.println("Option A (Thread) running : "+
@@ -22,22 +21,18 @@ public class Q_02_Thread_Creation_Ways {
         // --- Using Option B ---
         // 1. Create the Task (The Script)
         MyRunnable task = new MyRunnable();
-        
+       
         // 2. Create the Worker (The Actor) and give it the Task
         Thread t2 = new Thread(task);
         
         // 3. Start the Worker
         t2.start();
-        
-        // ⚡ Modern Java Bonus: Using Lambda (Java 8+)
-        // Since Runnable is a Functional Interface, we don't even need a separate class!
+        // Since Runnable is a Functional Interface,
+        //  we don't even need a separate class!
         Thread t3 = new Thread(() -> {
             System.out.println("Option C (Lambda) running: "
              + Thread.currentThread().getName());
         });
         t3.start();
-
-    }
-
-    
+    }    
 }
