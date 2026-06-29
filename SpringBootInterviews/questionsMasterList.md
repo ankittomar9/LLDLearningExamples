@@ -169,3 +169,38 @@ that test production ownership, not tutorial knowledge:
 18. Why do apps behave differently in Docker vs local?
 19. How do configuration changes break running services?
 20. What Spring Boot decision once caused a serious production issue?
+
+
+📌 Round 1 : ( Technical )
+
+👉 Write a Java program to reverse first and last digit of number without converting it into a string.
+👉 Difference between an interface and an abstract class in Java.
+👉 Design patterns such as Singleton or Factory in your automation framework?
+👉 Difference between HashMap and TreeMap in Java? Give example.
+👉 Difference between Assert and Verify in Selenium?
+👉 Thread.sleep() vs WebDriverWait in Selenium?
+👉 Write Selenium code to handle file download from the browser.
+👉 Steps would you take if an element is not interactable in Selenium?
+👉 Difference between Alpha testing and Beta testing ? Give examples.
+👉 Describe a difficult bug you discovered in your testing and how you resolved it. ? Give example
+
+📌 Round 2 : ( Techno-managerial round )
+👉 Explain the key components of the test automation framework you worked on?
+👉 Can you write selenium code to zoom in on a webpage ?
+👉 Can you perform a mouse hover action on an element using Selenium?
+👉 Can you write  Selenium code to capture a screenshot with a custom file name. Write code
+👉 Write a Selenium code to handle file uploads .
+👉 Challenges you faced while running tests on multiple browsers at the same time using Selenium Grid?
+👉 What are the key challenges you have faced in testing in the dynamic websites ? Give some practical scenarios.
+👉 Role of feature files in Cucumber BDD
+👉 Static binding and dynamic binding in Java ?  Give some practical examples.
+👉 Differences between a requirement and a user story in Agile methodology ? 
+👉 What is Jenkins CRON expression ? How would you configure Jenkins to run automated tests after every commit ?
+
+📌 Round 3 : ( HR )
+👉 What is your expected ctc ?
+👉 Can you relocate if required ?
+👉 Joining date discussion.
+contributed by : ajay
+
+#globallogic #qa #testing #jobs #interview
